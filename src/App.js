@@ -10,6 +10,8 @@ function App() {
   const [show4,setShow4]= useState(true);
   const [show5,setShow5]= useState(true);
   const [show6,setShow6]= useState(true);
+  const [show7,setShow7]= useState(true);
+  const [show8,setShow8]= useState(true);
   const [count,setCount]= useState(0);
   return (
     <div className="App">
@@ -67,7 +69,7 @@ function App() {
                             </div>
                           
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow1(!show1),show1?setCount(count+1):setCount(count-1)]} href="#" >{show1?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
@@ -98,7 +100,7 @@ function App() {
                             </div>
                             
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow1(!show1),show1?setCount(count+1):setCount(count-1)]} href="#" >{show1?"Add to Cart":"Remove from Cart"}</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow2(!show2),show2?setCount(count+1):setCount(count-1)]} href="#" >{show2?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +122,7 @@ function App() {
                             </div>
                           
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow2(!show2),show2?setCount(count+1):setCount(count-1)]} href="#" >{show2?"Add to Cart":"Remove from Cart"}</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow3(!show3),show3?setCount(count+1):setCount(count-1)]} href="#" >{show3?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
@@ -147,7 +149,7 @@ function App() {
                             </div>
                          
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow3(!show3),show3?setCount(count+1):setCount(count-1)]} href="#" >{show3?"Add to Cart":"Remove from Cart"}</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow4(!show4),show4?setCount(count+1):setCount(count-1)]} href="#" >{show4?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
@@ -169,7 +171,7 @@ function App() {
                             </div>
                            
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow4(!show4),show4?setCount(count+1):setCount(count-1)]} href="#" >{show4?"Add to Cart":"Remove from Cart"}</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow5(!show5),show5?setCount(count+1):setCount(count-1)]} href="#" >{show5?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
@@ -188,7 +190,7 @@ function App() {
                             </div>
                           
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow6(!show6),show6?setCount(count+1):setCount(count-1)]} href="#" >{show6?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
@@ -218,7 +220,7 @@ function App() {
                             </div>
                          
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow5(!show5),show5?setCount(count+1):setCount(count-1)]} href="#" >{show5?"Add to Cart":"Remove from Cart"}</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow7(!show7),show7?setCount(count+1):setCount(count-1)]} href="#" >{show7?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
@@ -245,7 +247,7 @@ function App() {
                             </div>
                       
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow6(!show6),show6?setCount(count+1):setCount(count-1)]} href="#" >{show6?"Add to Cart":"Remove from Cart"}</a></div>
+                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>[setShow8(!show8),show8?setCount(count+1):setCount(count-1)]} href="#" >{show8?"Add to Cart":"Remove from Cart"}</a></div>
                             </div>
                         </div>
                     </div>
